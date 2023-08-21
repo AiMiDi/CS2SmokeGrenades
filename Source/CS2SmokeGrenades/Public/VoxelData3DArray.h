@@ -31,7 +31,7 @@ public:
 	void Init(const int X, const int Y, const int Z);
 
 	UFUNCTION(BlueprintCallable, Category = "Voxel")
-	FVoxelData& GetData(const int X, const int Y, const int Z);
+	const FVoxelData& GetData(const int X, const int Y, const int Z);
 
 	UFUNCTION(BlueprintCallable, Category = "Voxel")
 	void SetData(const int X, const int Y, const int Z, const FVoxelData& Data);

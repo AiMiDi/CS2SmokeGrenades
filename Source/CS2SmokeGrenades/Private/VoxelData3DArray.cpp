@@ -13,7 +13,7 @@ void UVoxelData3DArray::Init(const int X, const int Y, const int Z)
 	}
 }
 
-FVoxelData& UVoxelData3DArray::GetData(const int X, const int Y, const int Z)
+const FVoxelData& UVoxelData3DArray::GetData(const int X, const int Y, const int Z)
 {
 	return Array[X][Y][Z];
 }
